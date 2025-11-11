@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>form tags</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="name"placeholder="ENTER YOUR FIRST NAME:"><br>
+        <input type="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS:"><br>
+        <input type="password" name="password"placeholder="ENTER YOUR PASSWPRD"><br>
+        DOB:<input type="data" name="dob"><br>
+        Salary:<input type="int" name="sal"><br>
+        check in time:<input type="time" name="intime"><br>
+        ADDRESS:<textarea name="add" col="3" rows="3"></textarea><br>
+        Department:<select name="dept" id="">
+            <option value="cs">computer science</option>
+            <option value="python">python programming</option>
+            <option value="os">operating system</option>
+            <option value="java">programming language</option>
+            <option value="cyber security">cyber security</option><br>
+        gender: <input type="radio"name="gender" value="M">male
+                <input type="radio" name="gender" value="F">female <br>
+        choose elective: <br>
+        <input type="checkbox" name="elective" value="python">python programming<br>
+        <input type="checkbox" name="elective" value="AI">Artificial interligence<br>
+        <input type="checkbox" name="elective" value="java">Java programming<br>
+        <input type="checkbox" name="elective" value="ML">Machine learning<br>
+        <input type="checkbox" name="elective" value="django">web development <br>
+        <input type="submit" value="save">
+        <input type="reset" value="clear all">
+    </form>
+</body>
+</html>
