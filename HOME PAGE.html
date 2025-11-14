@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+       div{
+        border: 1px solid;
+       }
+       .title{
+        font-size:45px;
+        font-style:bold;
+       }
+       .bi{
+        font-size:50px;
+       }
+       .carousel-control-prev-icon
+        .carosel-next-icon,.carosel-contrl-prev-icon
+        {
+          background-color: red; 
+        }   
+        .indi{
+          height:20px;
+          background-color: red;
+        }
+        .card{
+          border: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--row 1-logo,company,icons,welcom,logout-->
+    <div class="row">
+    <div  class="col-1">
+        <img src="dgvc logo.jfif" style="width:100%" alt="">
+    </div>
+    <div class="col-4 text-center">
+        <span class="title" style="color: blue;">DWARAKA</span>
+        <span class="title" style="color:red">DOSS</span>
+    </div>
+    <div class="col-3">
+        <i class="bi bi-linkedin" style="color: rgb(8, 142, 191);"></i>
+        <i class="bi bi-instagram" style="color: rgb(226, 43, 134);" ></i>
+    </div>
+    <div class="col-3">welcome,pushpasree</div>
+    <div class="col-1">
+        <i class="bi bi-box-arrow-right"></i> 
+    </div>
+   <!--row 2-menu bar,search -->
+    <div class="row">
+        <div class="col-9" style="background-color: blue; font-style: bold; color: blanchedalmond;">MENU BAR</div>
+        <div class="col-3">
+          <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="search the web" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+  <span class="input-group-text" id="basic-addon2"></span><i class="bi bi-search-heart-fill"></i>></span>
+</div>
+</div>
+        </div>
+    </div>
+
+    <!--row 3- scrolling text-->
+   <div class="row">
+    <marquee behavior="" direction="">
+        <h3>welcome to my home page</h3>
+    </marquee>
+   </div>
+   <!--row 4 sliding images-->
+   <div class="row">
+     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="c:\Users\Ibscai42.DGVC-MCA\25E5842\peacock feather.jfif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="c:\Users\Ibscai42.DGVC-MCA\25E5842\muruga.jfif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="display:flex;"></div>
+      <div class="card" style>
+      <img src="c:\Users\Ibscai42.DGVC-MCA\25E5842\devil.jfif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <div class=""></div>
+      <img src="c:\Users\Ibscai42.DGVC-MCA\25E5842\sunflower.jfif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>fourth slide label</h5>
+        <p>Some representative placeholder content for the fourth slide.</p>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+   </div>
+   <!--row 5 cards*4-->
+   <div class=""
+   
+</body>
+</html>
