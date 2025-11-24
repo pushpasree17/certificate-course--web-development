@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    .title {
+      font-size: 45px;
+      font-style: bold;
+    }
+
+    .bi {
+      font-size: 50px;
+    }
+
+    .carousel-control-prev-icon .carosel-next-icon,
+    .carosel-contrl-prev-icon {
+      background-color: red;
+    }
+
+    .indi {
+      height: 20px;
+      background-color: red;
+    }
+
+    .card {
+      border: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--row 1-logo,company,icons,welcom,logout-->
+  <div class="row m-2">
+    <div class="col-1">
+      <img src="ICECREAM SYMBOL.jpg" style="width:100%" alt="">
+    </div>
+    <div class="col-4 text-center">
+      <span class="title" style="color: rgb(209, 14, 154);">ICE CREAM </span>
+      <span class="title" style="color:rgb(146, 23, 217)">PARLOUR</span>
+    </div>
+    <div class="col-3">
+      <i class="bi bi-linkedin" style="color: rgb(8, 142, 191);"></i>
+      <i class="bi bi-instagram" style="color: rgb(226, 43, 134);"></i>
+    </div>
+    <div class="col-3" style="color:rgb(84, 23, 217);" font-size="30px">welcome to TASTE</div>
+    <div class="col-1">
+      <i class="bi bi-box-arrow-right"></i>
+    </div>
+  </div>
+  <!--row 2-menu bar,search -->
+  <div class="row" style="background-color:rgb(136, 8, 191);">
+    <div class="col-9" style="color:rgb(202, 34, 34); font-style: bold; color:rgb(44, 10, 212);">
+      <nav class="navbar navbar-expand-lg only text">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="col-3">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="search the web" aria-label="Recipient’s username"
+          aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2"></span><i class="bi bi-search-heart-fill"></i>></span>
+      </div>
+    </div>
+  </div>
+  <!--row 3- scrolling text-->
+  <div class="row">
+    <marquee behavior="" direction="">
+      <a href="https://www.icecream.com/">WELCOME TO OUR ICE CREAM PARLOUR</a>
+    </marquee>
+  </div>
+  <!--row 4 sliding images-->
+  <div class="row">
+    <div class="col-6">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1">
+          </button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="cones.jfif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="varaities.jfif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="display:flex;"></div>
+          <div class="card" style>
+            <img src="color.jfif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="mulberry.webp" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>fourth slide label</h5>
+            <p>Some representative placeholder content for the fourth slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="card col-3 m-0">
+      <div class="card" style="width: 18rem;">
+        <img src="mulberry.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MULBERRY</h5>
+          <p class="card-text">The ice cream is made by making a really concentrated mulberry syrup (which is one of my most popular mulberry recipes!), and combining that syrup with heavy cream, milk, and vanilla extract. The vanilla is optional, but trust me, the addition of vanilla to mulberries is so delicious!</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card col-3 m-0">
+          <div class="card" style="width: 18rem;">
+            <img src="cones.jfif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ICECREAM</h5>
+              <p class="card-text">Ice cream is a frozen dessert typically made from milk or cream that has been flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit, such as strawberries or peaches. Food colouring is sometimes added in addition to stabilizers.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--row 5 cards-->
+    <div class="row">
+      <div class="card" style="width: 18rem;">
+        <img src="cones.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NATURAL ICE CREAM</h5>
+          <p class="card-text">To get a Natural's Ice Cream franchise, you must submit an inquiry through their official website, where you can find details on the investment required, which is estimated to be between ₹12 and ₹20 lakhs. The total cost includes franchise fees, interior setup, equipment, and working capital..</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="varaities.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ICE CREAM</h5>
+          <p class="card-text">Ice cream is a frozen dessert typically made from milk or cream that has been flavoured with a sweetener, either sugar or an alternative, and a spice, such as cocoa or vanilla, or with fruit, such as strawberries or peaches. Food colouring is sometimes added in addition to stabilizers.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="mulberry.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">MULBERRY</h5>
+          <p class="card-text">The ice cream is made by making a really concentrated mulberry syrup (which is one of my most popular mulberry recipes!), and combining that syrup with heavy cream, milk, and vanilla extract. The vanilla is optional, but trust me, the addition of vanilla to mulberries is so delicious!</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="color.jfif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">COLOR</h5>
+          <p class="card-text">You can find "no artificial color" ice cream by looking for brands that specifically state this on their packaging, such as the Vadilal Gourmet Natural line or Eclipse Foods. Many local and specialty shops also offer options made with natural ingredients like real fruit pulp, and Aunt Frida provides 100% natural ice cream without artificial colors or preservatives, according to their website. </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
