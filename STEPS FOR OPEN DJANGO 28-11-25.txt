@@ -1,0 +1,46 @@
+1.create a  new folder for your projects
+2.open cmd from your new folder{type -pip install django}->enter
+3.create a project-->
+django-admin startproject PROJECT1
+(or)
+python -m django-admin startproject PROJECT1
+(or)
+python -m venv venv
+venv\Scripts\activate.bat-->(this line is only need  to open )
+pip install django
+django-admin startproject PROJECT1
+4.code .
+5.open VS code terminal
+>>python manage.py startapp app1
+6.PROJECT1-->right click-settings.py
+ Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'app1'                        -->need to type in line 40
+]
+
+7.the create new as app1-->templates--->home.html--in body type=<h1>welcome to my django project</h1>
+8.open views
+from django.shortcuts import render
+
+# Create your views here.
+def homepage(request):                 |
+    return render(request,'home.html') | needed to type this two lines
+
+9.open urls.py--> PROJECT1
+from django.contrib import admin
+from django.urls import path
+from app1 import views
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',views.homepage)   --->NEED TO TYPE THIS LINE 
+]
+10.TERMINAL:
+>>python manage.py startapp app1-->enter 
+open the link
